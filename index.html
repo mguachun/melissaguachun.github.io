@@ -7,8 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
-        h1 {
+        h1, body{
     font-family: 'Karla', sans-serif;
+    }
+    #myDIV {
+        width: 100%;
+        padding: 50px 0;
+        text-align: center;
+        margin-top: 20px;
     }
     </style>
 
@@ -22,9 +28,39 @@
         width="15%" height="auto%" style="border-radius: 50%;">
         <br>
         <h1>Melissa Guachun</h1>
+        <h3>Software Engineer, Visual Artist, Creative</h3>
+        <br>
+        <p></p>
+        <p>
+            <a onclick="myFunction()">Resume</a>
+            <div id="myDIV">
+                <iframe src="file:///Users/melissaguachun/Downloads/CopyofSEMGuachunResume.html" width="70%" height="70%">Resume</iframe> 
+            </div>
+
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("myDIV");
+                  if (x.style.display === "none") {
+                    x.style.display = "block";
+                  } else {
+                    x.style.display = "none";
+                  }
+                }
+                </script>
+            
+             <!-- <iframe src="file:///Users/melissaguachun/Downloads/CopyofSEMGuachunResume.html" width="70%" height="70%">Resume</iframe> -->
+        </p>
+        <p>
+            <a href="https://github.com/mguachun">Github</a>
+        </p>
+        <p>
+            <a href="https://www.linkedin.com/in/melissa-guachun/">LinkedIn</a>
+        </p>
+
 
     </div>
 
     
 </body>
 </html>
+
