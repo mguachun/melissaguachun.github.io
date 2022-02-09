@@ -21,17 +21,14 @@
             margin-top: 20px;
         }
 
-        #imgFooter {
+        #footer {
             text-align: center;
         }
 
         #header {
-       
             background: rgb(234, 238, 251);
             border-radius: 40px;
-            /* padding: 10px; */
-            height: 700px;
-           
+            height: 600px;
         }
 
         #name {
@@ -90,7 +87,7 @@
 
         #description {
             display: inline-block;
-           
+            padding-left: 280px;
         }
 
         .logo {
@@ -104,11 +101,26 @@
             display: inline-block;
             margin: 4px 2px;
             cursor: pointer;
-            border-radius: 16px;         
+            border-radius: 16px;   
+            margin-left: 50px;     
         }
 
-      
+        .resume {
+            background:  rgb(234, 238, 251);
+            border: none;
+            color: black;
+            padding: 10px 20px;
 
+            text-decoration: none;
+     
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 16px;
+            margin-left: 550px;
+        }
+
+    
+        
     </style>
 
 </head>
@@ -117,9 +129,9 @@
     <link rel="stylesheet" href="main.css">
 
     <title>Melissa Guachun</title>
-   
+    <h1 id="name">Melissa Guachun</h1>
         <span id="nav">
-            <h1 id="name">Melissa Guachun</h1>
+            <!-- <h1 id="name">Melissa Guachun</h1> -->
             <a class="logo" href="https://github.com/mguachun"> Github</a>
             
             
@@ -136,14 +148,13 @@
             
         <span>
     <div>
+
+        <h1 id="description">Software Engineer | Visual Artist | Creative </h1>
         <div id="header">
             
             <img src="https://media-exp1.licdn.com/dms/image/C5603AQF7xIb0ttVt9w/profile-displayphoto-shrink_400_400/0/1634750160016?e=1645056000&v=beta&t=rTmO9LvrZlnGUvR3jNhLikcFpM2saZbQTBUS-TfVZBQ"
                 id="profile-image">
             <br>
-            <h1 id="description">Software Engineer | Visual Artist | Creative </h1>
-    
-    
             <img src="assets/css/computers.jpg" id="computer">  
         </div>
     
@@ -151,7 +162,7 @@
     
 
         <p>
-            <a onclick="myFunction()" class="logo">Resume</a>
+            <a onclick="myFunction()" class="resume">Resume</a>
         <div id="myDIV">
             <iframe
                 src="https://docs.google.com/gview?url=https://github.com/mguachun/resume/raw/main/SE%20MGuachun%20Resume%202022%20.pdf&embedded=true"
@@ -175,7 +186,7 @@
 
 
 
-        <footer> MELISSA GUACHUN © 2022</footer>
+        <footer id="footer"> MELISSA GUACHUN © 2022</footer>
 
          
 
