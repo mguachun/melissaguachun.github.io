@@ -29,18 +29,28 @@
        
             background: rgb(234, 238, 251);
             border-radius: 40px;
-            padding: 10px;
+            /* padding: 10px; */
+            height: 600px;
+           
         }
 
-        .name {
+        #name {
            padding-right: 100px;
-           margin-left: 20px;
+           margin-left: 50px;
+           font-size: 50px;
+           display: inline-block;
         }
 
 
-        #self {
-            padding-top: 20px;
+        #profile-image {
             float: left;
+            border-radius: 1000px;
+            height: 375px;
+            width: 375px;
+            display: block;
+            margin: 0px auto;
+            border: #423e6d solid 1px;
+            box-shadow: 0 4px 6px 0 hsl(0deg 0% 0% / 20%);
         }
 
         .container {
@@ -81,9 +91,10 @@
             display: inline-block;
             margin: 4px 2px;
             cursor: pointer;
-            border-radius: 16px;
-                    
+            border-radius: 16px;         
         }
+
+      
 
     </style>
 
@@ -93,20 +104,9 @@
     <link rel="stylesheet" href="main.css">
 
     <title>Melissa Guachun</title>
-    <div>
-        <h1 id="name">Melissa Guachun</h1>
-        <div id="header">
-            
-            <img src="https://media-exp1.licdn.com/dms/image/C5603AQF7xIb0ttVt9w/profile-displayphoto-shrink_400_400/0/1634750160016?e=1645056000&v=beta&t=rTmO9LvrZlnGUvR3jNhLikcFpM2saZbQTBUS-TfVZBQ"
-                id="self" width="15%" height="auto%" style="border-radius: 50%;">
-            <br>
-            
-            <h3>Software Engineer, Visual Artist, Creative</h3>
-            <h4>Based in NYC</h4>
-            
-        </div>
-        <br>
-        <span>
+   
+        <span id="nav">
+            <h1 id="name">Melissa Guachun</h1>
             <a class="logo" href="https://github.com/mguachun"> Github</a>
             
             
@@ -114,14 +114,27 @@
           
             
             <a class="logo" href="https://1212malka.medium.com">Medium</a>
-
-
+    
+    
             <a class="logo" href="https://dev.to/melguachun">DEV</a>
             
     
             <a class="logo" href="https://www.melguachunart.com">Art</a>
             
         <span>
+    <div>
+        <div id="header">
+            
+            <img src="https://media-exp1.licdn.com/dms/image/C5603AQF7xIb0ttVt9w/profile-displayphoto-shrink_400_400/0/1634750160016?e=1645056000&v=beta&t=rTmO9LvrZlnGUvR3jNhLikcFpM2saZbQTBUS-TfVZBQ"
+                id="profile-image">
+            <br>
+            
+            <h3>Software Engineer, Visual Artist, Creative</h3>
+            <h4>Based in NYC</h4>
+            
+        </div>
+        <br>
+    
 
         <p>
             <a onclick="myFunction()" class="logo">Resume</a>
